@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Index1Content from '../components/Index1Content'
 import Index2Content from '../components/Index2Content'
 
