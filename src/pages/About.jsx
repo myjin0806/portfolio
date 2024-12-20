@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Matter from 'matter-js';
-import { Engine, Render, World, Bodies, MouseConstraint, Mouse, Events } from 'matter-js';
 import Index1Content from '../components/Index1Content'
 import Index2Content from '../components/Index2Content'
 
