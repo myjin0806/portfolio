@@ -1,0 +1,182 @@
+[
+  {
+    "type": "main",
+    "title": "개인 포트폴리오",
+    "image": "main03.png",
+    "class":"REACT",
+    "during": "2024-11-04 - 2024-12-00",
+    "skill": ["HTML", "CSS", "REACT", "JAVASCRIPT"],
+    "description": "개인 포트폴리오 웹사이트로, 나의 프로젝트와 기술 스택을 소개하는 중요한 플랫폼입니다. React를 활용해 동적인 사용자 경험을 제공하며, 애니메이션 효과와 모던한 디자인을 통해 시각적으로 매력적인 사이트를 완성했습니다. 이를 통해 나의 개발 역량과 디자인 감각을 효과적으로 전달할 수 있습니다.",
+    "github": "",
+    "demo": ""
+  },
+  {
+    "type": "main",
+    "title": "서울어린이대공원 리뉴얼",
+    "image": "main02.png",
+    "class":"RESPONSIVE",
+    "during": "2024-10-29 - 2024-11-29",
+    "skill": ["HTML", "CSS", "SCSS", "JAVASCRIPT"],
+    "description": "서울어린이대공원 홈페이지의 리뉴얼 프로젝트로, 방문객들이 편리하게 정보를 탐색할 수 있는 사용자 친화적인 인터페이스를 구현했습니다. SCSS를 통해 스타일시트를 모듈화하고 코드의 재사용성을 높여 유지보수를 용이하게 했습니다. 다양한 화면 크기에 맞는 반응형 웹디자인을 제공하여 모든 디바이스에서 원활한 사용자 경험을 보장합니다.",
+    "github": "https://github.com/myjin0806/sciencecenter-renewal.git",
+    "demo": "https://myjin0806.github.io/seoulchildrensgrandpark_Portfolio/"
+  },
+  {
+    "type": "main",
+    "title": "국립과천과학관 리뉴얼",
+    "image": "main01.png",
+    "class":"RESPONSIVE",
+    "during": "2024-09-28 - 2024-10-25",
+    "skill": ["HTML", "CSS", "JAVASCRIPT"],
+    "description": "국립과천과학관 홈페이지의 리뉴얼 프로젝트로, 사용자 경험을 중시하여 웹사이트의 접근성과 반응성을 개선했습니다. 최신 HTML, CSS, JavaScript 기술을 활용하여 다양한 기기에서 최적화된 화면을 제공합니다. 특히, 직관적이고 현대적인 디자인을 채택하여 방문자가 빠르게 정보를 찾을 수 있도록 했습니다.",
+    "github": "http://github.com/myjin0806/sciencecenter-renewal.git",
+    "demo": "https://myjin0806.github.io/sciencecenter-renewal/"
+  },
+  {
+    "type": "sub",
+    "title": "블로그*기억창고",
+    "image": "sub14.png",
+    "class":"REACT",
+    "during": "2024.12.12 - 2024.12.16",
+    "skill": ["HTML", "CSS", "REACT", "JAVASCRIPT"],
+    "description": "REACT로 제작한 블로그 웹사이트로, 컴포넌트 기반 구조를 통해 재사용성을 높였습니다. 사용자와의 상호작용을 고려하여 좋아요와 댓글 기능을 추가하여 소통할 수 있는 공간을 마련했습니다. 이 프로젝트는 REACT의 기본 개념을 이해하고 실습하는 데 중점을 두었습니다.",
+    "github": "https://github.com/myjin0806/test_blog.git",
+    "demo": "https://myjin0806-blog-test.netlify.app/"
+  },
+  {
+    "type": "sub",
+    "title": "Todo List",
+    "image": "sub13.png",
+    "class":"REACT",
+    "during": "2024.12.12 - 2024.12.16",
+    "skill": ["HTML", "CSS", "REACT", "JAVASCRIPT"],
+    "description": "REACT로 제작한 Todo List 애플리케이션으로, 할 일을 추가하고 완료 여부를 토글할 수 있는 간단하면서도 유용한 기능을 제공합니다. 다크 모드와 완료된 항목 필터링 기능을 통해 사용자 경험을 개선하고, 보다 직관적이고 편리한 환경을 만들었습니다.",
+    "github": "https://github.com/myjin0806/test_todolist.git",
+    "demo": "https://myjin0806-todolist.netlify.app/"
+  },
+  {
+    "type": "sub",
+    "title": "class 101 클론코딩",
+    "image": "sub12.png",
+    "class":"RESPONSIVE",
+    "during": "2024.11.00 - 2024.12.04",
+    "skill": ["HTML", "CSS", "REACT", "JAVASCRIPT"],
+    "description": "Class 101의 페이지를 클론코딩한 프로젝트로, SCSS와 React를 활용하여 효율적인 코드 구조와 높은 유지보수성을 추구했습니다. 클래스 카테고리, 상세 페이지, 로그인 및 장바구니 기능까지 구현하여 전체적인 쇼핑 경험을 제공합니다.",
+    "github": "https://github.com/myjin0806/clone_class101.git",
+    "demo": "https://myjin0806.github.io/clone_class101/"
+  },
+  {
+    "type": "sub",
+    "title": "이벤트 등록이 가능한 달력",
+    "image": "sub11.png",
+    "during": "2024.11.25 - 2024.11.26",
+    "skill": ["HTML", "CSS", "JAVASCRIPT"],
+    "description": "이벤트 등록 기능을 제공하는 달력 애플리케이션으로, 사용자가 날짜를 선택하여 이벤트를 쉽게 추가하고 삭제할 수 있습니다. 직관적인 UI로 사용자가 빠르게 원하는 날짜에 이벤트를 관리할 수 있도록 하여 일정을 손쉽게 계획할 수 있게 했습니다.",
+    "github": "https://github.com/myjin0806/events_calendar.git",
+    "demo": "https://myjin0806.github.io/events_calendar/"
+  },
+  {
+    "type": "sub",
+    "title": "Mordern Shopping Mall",
+    "image": "sub10.png",
+    "during": "2024.11.19 - 2024.11.20",
+    "skill": ["HTML", "CSS", "JAVASCRIPT"],
+    "description": "JAVASCRIPT를 통해 구현한 가구 쇼핑몰로, 구매하기 및 좋아요 기능을 추가하여 로컬스토리지에 데이터를 저장합니다. 사용자가 장바구니에 담은 항목을 합산하여 보여주는 기능을 통해 쇼핑 경험을 향상시켰습니다.",
+    "github": "https://github.com/myjin0806/mordern_shopping_mall.git",
+    "demo": "https://myjin0806.github.io/mordern_shopping_mall/"
+  },
+  {
+    "type": "sub",
+    "title": "오늘의 날짜 맞추기 게임",
+    "image": "sub09.png",
+    "during": "2024.11.19",
+    "skill": ["HTML", "CSS", "JAVASCRIPT"],
+    "description": "Date() 객체를 활용한 간단한 날짜 맞추기 게임으로, 사용자가 월과 일을 입력하면 정답 여부를 알려주는 기능을 제공합니다. 게임 요소를 추가하여 흥미를 유발하고, 기본적인 자바스크립트 사용법을 익히는 데 도움이 된 프로젝트입니다.",
+    "github": "https://github.com/myjin0806/todays-date.git",
+    "demo": "https://myjin0806.github.io/todays-date/"
+  },
+  {
+    "type": "sub",
+    "title": "JAVASCRIPT 달력",
+    "image": "sub08.png",
+    "during": "2024.11.19",
+    "skill": ["HTML", "CSS", "JAVASCRIPT"],
+    "description": "자바스크립트를 활용하여 구현한 달력으로, 이전과 다음 달로 쉽게 이동할 수 있으며, 날짜를 클릭하면 하단에 선택된 날짜를 표시해주는 기능을 추가했습니다. 이 프로젝트는 날짜 관련 자바스크립트 기능을 학습하는 데 유용하며, 사용자가 직관적으로 날짜를 관리할 수 있도록 했습니다.",
+    "github": "https://github.com/myjin0806/test_calendar.git",
+    "demo": "https://myjin0806.github.io/test_calendar/"
+  },
+  {
+    "type": "sub",
+    "title": "날씨를 알려줘요!",
+    "image": "sub07.png",
+    "during": "2024.11.11",
+    "skill": ["HTML", "CSS", "JAVASCRIPT"],
+    "description": "날씨 API를 활용하여 사용자의 위치 기반으로 실시간 날씨 정보를 제공하는 애플리케이션입니다. 도시 이름을 검색하면 해당 도시의 날씨를 실시간으로 보여주어 유용한 정보를 즉시 제공하며, 실생활에 바로 사용할 수 있는 앱을 구현했습니다.",
+    "github": "https://github.com/myjin0806/show_weather.git",
+    "demo": "https://myjin0806.github.io/show_weather/"
+  },
+  {
+    "type": "sub",
+    "title": "에이전시 페이지",
+    "image": "sub06.png",
+    "during": "2024.09.02",
+    "skill": ["HTML", "CSS", "JAVASCRIPT"],
+    "description": "에이전시 메인 페이지 구현 프로젝트로, HTML과 CSS를 활용해 세련된 디자인을 구현했습니다. '스와이퍼' 플러그인을 사용하여 슬라이드 기능을 추가하고, 다양한 콘텐츠를 직관적으로 배치하여 시각적으로 매력적인 페이지를 완성했습니다.",
+    "github": "https://github.com/myjin0806/test_agency.git",
+    "demo": "https://myjin0806.github.io/test_agency/"
+  },
+  {
+    "type": "sub",
+    "title": "Homecheck 클론코딩",
+    "image": "sub05.png",
+    "class":"RESPONSIVE",
+    "during": "2024.08.26 - 2024.08.29",
+    "skill": ["HTML", "CSS"],
+    "description": "Homecheck의 메인 페이지를 클론한 프로젝트로, HTML과 CSS를 통해 반응형 디자인을 구현하고 다양한 화면에서의 사용자 경험을 고려하여 최적화했습니다. 이를 통해 HTML과 CSS에 대한 이해를 깊게 할 수 있었으며, 사용자의 요구에 맞는 디자인을 제공했습니다.",
+    "github": "https://github.com/myjin0806/clone_homecheck.git",
+    "demo": "https://myjin0806.github.io/clone_homecheck/"
+  },
+  {
+    "type": "sub",
+    "title": "Netflix 클론코딩",
+    "image": "sub04.png",
+    "class":"RESPONSIVE",
+    "during": "2024.08.26 - 2024.08.29",
+    "skill": ["HTML", "CSS","JAVASCRIPT"],
+    "description": "Netflix 메인 페이지 클론코딩으로, HTML과 CSS, JAVASCRIPT를 활용하여 모달 및 아코디언 기능을 적용하였습니다. 사용자 인터페이스를 매력적으로 구성하여 실제 서비스처럼 경헝할 수 있도록 구현했습니다.",
+    "github": "https://github.com/myjin0806/clone_netflix.git",
+    "demo": "https://myjin0806.github.io/clone_netflix/"
+  },
+  {
+    "type": "sub",
+    "title": "Custom CheckBox",
+    "image": "sub03.png",
+    "during": "2024.08.24",
+    "skill": ["HTML", "CSS"],
+    "description": "커스텀 체크박스 로그인 폼 프로젝트로, 기본 input 요소를 커스터마이징하여 사용자 경험을 향상시켰습니다. 디자인적인 측면에서 편리하고 직관적인 UI를 제공하며, 사용자가 더욱 친숙하게 사용할 수 있도록 했습니다.",
+    "github": "https://github.com/myjin0806/custom_checkbox.git",
+    "demo": "https://myjin0806.github.io/custom_checkbox/"
+  },
+  {
+    "type": "sub",
+    "title": "Mammamia 클론코딩",
+    "image": "sub02.png",
+    "class":"RESPONSIVE",
+    "during": "2024.08.22",
+    "skill": ["HTML", "CSS"],
+    "description": "Mammamia의 메인 페이지를 클론한 프로젝트로, HTML과 CSS를 이용하여 display 속성을 깊이 이해하며 반응형 웹디자인을 구현했습니다. 모바일에서도 편리하게 볼 수 있도록 최적화하였으며, 기본적인 웹 개발 능력을 향상시키는 데 도움이 되었습니다.",
+    "github": "https://github.com/myjin0806/clone_mammamia.git",
+    "demo": "https://myjin0806.github.io/clone_mammamia/"
+  },
+  {
+    "type": "sub",
+    "title": "Google Chrome 클론코딩",
+    "image": "sub01.png",
+    "class":"RESPONSIVE",
+    "during": "2024.08.20 - 2024.08.21",
+    "skill": ["HTML", "CSS", "JAVASCRIPT"],
+    "description": "Google Chrome 다운로드 페이지를 클론한 프로젝트로, HTML, CSS, JavaScript를 활용하여 웹페이지의 기본적인 기능을 구현했습니다. 간단한 자바스크립트를 적용하여 페이지의 동적인 요소를 추가하고, 실제 서비스와 유사한 경험을 제공합니다.",
+    "github": "https://github.com/myjin0806/clone_googlechrome.git",
+    "demo": "https://myjin0806.github.io/clone_googlechrome/"
+  }
+]

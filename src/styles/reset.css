@@ -1,0 +1,84 @@
+/* font */
+/* neo둥근고딕 pro */
+/* @font-face {
+  font-family: 'NeoDunggeunmoPro-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}  */
+/* 부트스트랩 */
+
+
+/* 폰트 */
+@font-face {
+  font-family: 'NeoDunggeunmoPro-Regular';
+  src: url('../../public/fonts/NeoDunggeunmoPro-Regular.woff') format(woff2);
+}
+@font-face {
+  font-family: 'Galmuri11';
+  src: url('../../public/fonts/Galmuri11.woff2') format(woff2);
+}
+@font-face {
+  font-family: 'pixelFont';
+  src: url('../../public/fonts/pixelFont.ttf') format(truetype);
+}
+
+/* var */ 
+:root{
+  /* color */
+  --dark-black :#333333;
+  --light-gray : #878787;
+  --white : white;
+  --cloud : #F3F4E7;
+  --ivory : #F3F4E7;
+  --beige : #E8CFA6;
+  --wood : #DCB98A;
+  --basic-wood : #C49A6C;
+  --dark-wood : #604B43;
+  --deep-wood : #1F1714;
+  --deep-green : #5F7A79;
+  --sky-blue : #8DD5C4;
+  --water-blue : #9BD4C3;
+  /* fonts */
+  --primary-kr : 'NeoDunggeunmoPro-Regular';
+  --secondary-kr : 'Galmuri11';
+  --primary-en : 'pixelFont';
+  /* clip-path */
+  --clip-l:polygon(/* top left */ 0 10px,5px 10px, 5px 5px, 10px 5px, 10px 0, /* top right */ calc(100% - 10px) 0, calc(100% - 10px) 5px, calc(100% - 5px) 5px, calc(100% - 5px) 10px, 100% 10px, /* bottom right */ 100% calc(100% - 10px), calc(100% - 5px) calc(100% - 10px), calc(100% - 5px) calc(100% - 5px), calc(100% - 10px) calc(100% - 5px), calc(100% - 10px) 100%, /* bottom left */ 10px 100%, 10px calc(100% - 5px), 5px calc(100% - 5px), 5px calc(100% - 10px), 0px calc(100% - 10px));
+  --clip-s: polygon(/* top left */ 0 4px, 4px 4px, 4px 0, /* top right */ calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px, /* bottom right */ 100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, /* bottom left */ 4px 100%, 4px calc(100% - 4px), 0 calc(100% - 4px));
+}
+
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+html, body, button{
+  font-family: 'Ownglyph_ParkDaHyun';
+}
+ul, ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+

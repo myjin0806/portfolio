@@ -1,0 +1,20 @@
+public/
+├── images/                // 이미지폴더
+src/
+├── components/
+│   ├── Header.js          // 상단 헤더 컴포넌트
+│   ├── Footer.js          // 하단 푸터 컴포넌트
+│   └── Project.js         // Portfolio에 들어갈 프로젝트 컴포넌트
+├── data/
+│   └── projectsData.js    // 프로젝트 데이터
+├── pages/
+│   ├── Start.js           // 시작 페이지&로딩창
+│   ├── Home.js            // 홈 페이지 컴포넌트
+│   ├── About.js         // 내 프로필 페이지
+│   ├── Portfolio.js       // 프로젝트 모음 페이지
+│   ├── Contect.js         // 콘텍트 페이지
+│   └── NotFound.js        // 404 에러 페이지
+├── styles/
+│   └── global.css         // 전체에 적용되는 스타일 정의
+├── App.js                 // 라우터 및 전체 앱 구성 파일
+└── index.js               // React 애플리케이션 진입점
