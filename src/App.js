@@ -12,50 +12,71 @@ import NotFound from './pages/NotFound';
 function App() {
   // 커스텀 커서
   useEffect(() => {
-    const pointer = document.createElement('div');
-    pointer.classList.add('customCursor');
-    document.body.appendChild(pointer);
-
-    const updatePointerStyle = (e) => {
-      pointer.style.left = `${e.pageX}px`;
-      pointer.style.top = `${e.pageY}px`;
-    };
-
-    const handlePointerEnter = () => {
-      pointer.style.backgroundImage = "url('/images/Catpaw_Mouse_icon.gif')";
-    };
-
-    const handlePointerLeave = () => {
-      pointer.style.backgroundImage = "url('/images/Arrow_Mouse_icon.png')";
-    };
-
-    const attachPointerListeners = () => {
-      const clickableElements = document.querySelectorAll('a, button');
-      clickableElements.forEach((element) => {
-        element.addEventListener('mouseenter', handlePointerEnter);
-        element.addEventListener('mouseleave', handlePointerLeave);
-      });
-    };
-
-    document.addEventListener('mousemove', updatePointerStyle);
-    attachPointerListeners();
-
-    const observer = new MutationObserver(attachPointerListeners);
-    observer.observe(document.body, { childList: true, subtree: true });
-
-    return () => {
-      // 커서 노드가 DOM에 남아있는 경우에만 제거
-      if (pointer.parentNode) {
-        document.body.removeChild(pointer);
+    const handleResize = () => {
+      const isMobile = window.innerWidth <= 480; // 화면 크기 확인
+  
+      if (isMobile) {
+        // 모바일일 경우 커서를 제거
+        const pointer = document.querySelector('.customCursor');
+        if (pointer) {
+          pointer.remove();
+        }
+      } else {
+        // 모바일이 아닐 경우 커서를 생성
+        const pointer = document.createElement('div');
+        pointer.classList.add('customCursor');
+        document.body.appendChild(pointer);
+  
+        const updatePointerStyle = (e) => {
+          pointer.style.left = `${e.pageX}px`;
+          pointer.style.top = `${e.pageY}px`;
+        };
+  
+        document.addEventListener('mousemove', updatePointerStyle);
+  
+        const handlePointerEnter = () => {
+          pointer.style.backgroundImage = "url('/images/Catpaw_Mouse_icon.gif')";
+        };
+  
+        const handlePointerLeave = () => {
+          pointer.style.backgroundImage = "url('/images/Arrow_Mouse_icon.png')";
+        };
+  
+        const attachPointerListeners = () => {
+          const clickableElements = document.querySelectorAll('a, button');
+          clickableElements.forEach((element) => {
+            element.addEventListener('mouseenter', handlePointerEnter);
+            element.addEventListener('mouseleave', handlePointerLeave);
+          });
+        };
+  
+        attachPointerListeners();
+  
+        const observer = new MutationObserver(attachPointerListeners);
+        observer.observe(document.body, { childList: true, subtree: true });
+  
+        return () => {
+          document.removeEventListener('mousemove', updatePointerStyle);
+          observer.disconnect();
+        };
       }
-      document.removeEventListener('mousemove', updatePointerStyle);
-      observer.disconnect();
+    };
+  
+    // 초기 실행
+    handleResize();
+  
+    // 화면 크기 변경 시마다 실행
+    window.addEventListener('resize', handleResize);
+  
+    return () => {
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
-
+  
   // 로딩 화면 구현
   const [isGameStart, setIsGameStart] = useState(false); // 게임 시작 여부
   const [isLoading, setIsLoading] = useState(false); // 로딩 상태
+  
 
   const handleGameStart = () => {
     setIsGameStart(true); // 버튼 클릭 시 게임 시작
