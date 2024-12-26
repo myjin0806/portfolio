@@ -1,41 +1,76 @@
-import React, {useState} from 'react'
+import React, { useState, useEffect } from 'react';
 import projectsData from '../data/projectsData.json';
 
-
 const Portfolio = () => {
-  const [selectedType, setSelectedType] = useState('ALL'); // 필터 버튼 상태
-  const [selectedProject, setSelectedProject] = useState(projectsData[0]); // 선택된 프로젝트 상태
+  const [selectedType, setSelectedType] = useState('ALL');
+  const [selectedProject, setSelectedProject] = useState(projectsData[0] || {}); // 초기값 확인
+  const [isRightBoardVisible, setIsRightBoardVisible] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 480);
 
-  // 필터링된 프로젝트 리스트
   const filteredProjects = selectedType === 'ALL'
-  ? projectsData
-  : projectsData.filter(project => project.class === selectedType);
+    ? projectsData
+    : projectsData.filter(
+        project => Array.isArray(project.class) && project.class.includes(selectedType)
+      );
 
-  // 프로젝트 썸네일 클릭 핸들러
+  useEffect(() => {
+    // 화면 크기 변경 시 처리
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 480);
+    };
+    window.addEventListener('resize', handleResize);
+
+    // close-btn 클릭 시 오른쪽 보드 숨김 처리
+    const closeButton = document.querySelector('.close-btn');
+    const rightBoard = document.querySelector('.rightBoard');
+
+    if (closeButton && rightBoard) {
+      closeButton.addEventListener('click', () => {
+        rightBoard.classList.remove('visible');
+        setIsRightBoardVisible(false);
+      });
+    }
+
+    // 컴포넌트 언마운트 시 이벤트 리스너 정리
+    return () => {
+      if (closeButton && rightBoard) {
+        closeButton.removeEventListener('click', () => {
+          rightBoard.classList.remove('visible');
+          setIsRightBoardVisible(false);
+        });
+      }
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []); // 빈 배열을 전달해 한 번만 실행
+
   const handleProjectClick = (project) => {
+    console.log('Clicked Project:', project); // 클릭한 프로젝트 확인
     setSelectedProject(project);
+    if (isMobile) {
+      console.log('Mobile view detected, showing right board');
+      setIsRightBoardVisible(true);
+    }
   };
 
   return (
-    <div className='jouralLayout portfolio'>
-      {/* 왼쪽영역 */}
+    <div className="jouralLayout portfolio">
       <div className="leftBoard board">
         <div className="portfolioWrap">
           <div className="portfolioTitle">
-            <h2>my PorTfoilo</h2>
-          </div> 
-          {/* 버튼 영역 */}
-          <div className="portfolioBtns">
-          <button id='all' className={selectedType === 'ALL' ? 'on' : ''} onClick={() => setSelectedType('ALL')}></button>
-            <button id='responsive' className={selectedType === 'RESPONSIVE' ? 'on' : ''} onClick={() => setSelectedType('RESPONSIVE')}></button>
-            <button id='react' className={selectedType === 'REACT' ? 'on' : ''} onClick={() => setSelectedType('REACT')}></button>
+            <img src="images/button.png" alt="" className="mobileButton" />
+            <h2>my Portfolio</h2>
           </div>
-          <div className="projectThumWrap">
-          {filteredProjects.map((project, index) => (
-              <div 
-                key={index} 
-                className={`projectThum ${selectedProject === project ? 'active' : ''}, ${project.type}`}
-                onClick={() => handleProjectClick(project)} // 클릭 이벤트
+          <div className="portfolioBtns">
+            <button id="all" className={selectedType === 'ALL' ? 'on' : ''} onClick={() => setSelectedType('ALL')}></button>
+            <button id="responsive" className={selectedType === 'RESPONSIVE' ? 'on' : ''} onClick={() => setSelectedType('RESPONSIVE')}></button>
+            <button id="react" className={selectedType === 'REACT' ? 'on' : ''} onClick={() => setSelectedType('REACT')}></button>
+          </div>
+          <div className="projectThumbsWrap">
+            {filteredProjects.map((project, index) => (
+              <div
+                key={index}
+                className={`projectThumb ${selectedProject === project ? 'active' : ''}, ${project.type}`}
+                onClick={() => handleProjectClick(project)}
               >
                 <img src={`images/${project.image}`} alt={project.title} />
               </div>
@@ -44,8 +79,8 @@ const Portfolio = () => {
         </div>
       </div>
 
-      {/* 오른쪽 */}
-      <div className="rightBoard board">
+      <div className={`rightBoard board ${isMobile && isRightBoardVisible ? 'visible' : 'hidden'}`}>
+        <button className="close-btn"></button>
         {selectedProject ? (
           <div className="projectWrap">
             <div className="projectHeader">
@@ -60,24 +95,20 @@ const Portfolio = () => {
             <div className="projectDetail">
               <div className="during">
                 <h4>프로젝트 기간</h4>
-                <p>{selectedProject.during}</p>
+                <p>{selectedProject.during || 'No duration provided'}</p>
               </div>
               <div className="skills">
                 <h4>SKILLS</h4>
-                <p>{selectedProject.skill.join(', ')}</p>
+                <p>{selectedProject.skill ? selectedProject.skill.join(', ') : 'No skills listed'}</p>
               </div>
               <div className="desc">
                 <h4>프로젝트 설명</h4>
-                <p>{selectedProject.description}</p>
+                <p>{selectedProject.description || 'No description available'}</p>
               </div>
             </div>
             <div className="projectLink">
-              <button onClick={() => window.open(selectedProject.github, '_blank')}>
-                GitHub
-              </button>
-              <button onClick={() => window.open(selectedProject.demo, '_blank')}>
-                Site
-              </button>
+              <button onClick={() => window.open(selectedProject.demo, '_blank')}>DEMO</button>
+              <button onClick={() => window.open(selectedProject.github, '_blank')}>GitHub</button>
             </div>
           </div>
         ) : (
@@ -85,7 +116,7 @@ const Portfolio = () => {
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;

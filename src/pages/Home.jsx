@@ -17,6 +17,10 @@ const Home = () => {
   const [idx, setIdx] = useState(0);
   const speed = 150;
   const [isFirstRender, setIsFirstRender] = useState(true);  // 처음 렌더링 구분
+  const [isMobile,setIsMobile ] = useState(window.innerWidth<=480);
+  const handleResize = () => {
+    setIsMobile((window.innerWidth <= 768))
+  }
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -58,10 +62,18 @@ const Home = () => {
         <img src="images/gif_boat.gif" alt="gif_boat" className="gifBoat" />
         <img src="images/gif_teemo_dance.gif" alt="gif_teemo_dance" className="gifTeemoDance" />
       </div>
-      <div className="textBox">
-        <img src="images/gif_teemo_happy2.gif" alt="티모 얼굴" className="teemoFace" />
-        <span id="mainText">{displayText}|</span>
-      </div>
+      {isMobile? (
+        <div className="mobileTextBox">
+          <img src="images/dialog_box_mobile.png" alt="모바일 텍스트 상자"></img>
+          <img src="images/gif_teemo_happy2.gif" alt="티모 얼굴" className="mobileTeemoFace" />
+          <span className="mobileText">안녕!<br/>만나서 반가워!</span>
+        </div>
+      ):(
+        <div className="textBox">
+          <img src="images/gif_teemo_happy2.gif" alt="티모 얼굴" className="teemoFace" />
+          <span id="mainText">{displayText}|</span>
+        </div>
+      )}
     </div>
   );
 };

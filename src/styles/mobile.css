@@ -1,0 +1,443 @@
+@media screen and (max-width:480px) {
+  body{
+    background-position: 20%;
+  }
+  body{
+    font-size: 14px;
+  }
+  /* common */
+  .content{
+    height: calc(100vh - 120px);
+  }
+  .board{
+    padding: 48px;
+    border-image: url("/public/images/contect_border_mobile.png") 54/50px round;
+  }
+  /* 시작 */
+  .startScreen{
+    background-size: 200%;
+    background-position: bottom;
+  }
+  .startTitle h1 img{
+    margin-top: 15%;
+    width: 80%;
+    object-fit: cover;
+  }
+  .startButton {
+    margin-top: 20%;
+  }
+  /* Header */
+  header{
+    height: 84px;
+  }
+  .headerWrap{
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .headerWrap .logo{
+    font-size: 20px;
+  }
+  .headerWrap nav ul{
+    justify-content: space-around;
+    gap: 10px;
+  }
+  .headerWrap nav ul li img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+  }
+  /* Footer */
+  footer{
+    height: 40px;
+  }
+  .footerWrap{
+    max-width: 100%;
+    line-height: 1.1rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footerWrap span{
+    font-size: 12px;
+  }
+  .footerWrap em{
+    display: none;
+  }
+  /* main */
+  .gifChest, .gifCow, .gifBabyCow, .gifBoat{
+    display: none;
+  }
+  .imgBox .gifTeemoDance{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .mobileTextBox{
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    bottom: 10px;
+  }
+  .mobileTextBox img:nth-child(1){
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .mobileTextBox img:nth-child(2){
+    width: 16.666%;
+    top: 27.58%;
+    left: 9.375%;
+    position: absolute;
+    z-index: 1;
+  }
+  .mobileText{
+    position: absolute;
+    font-size: 20px;
+    bottom: 30%;
+    left: 38%;
+    color: var(--dark-wood);
+    z-index: 150;
+  }
+
+  /* about */
+  .aboutMobileWrap{
+    display: flex;
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+  }
+  .aboutMobile{
+    margin-top: 20px;
+    padding: 20px 0px;
+    height: calc(100% - 160px);
+    background-color: var(--ivory);
+    background-size: 100%;
+    clip-path: var(--clip-l);
+    box-shadow: var(--box-m);
+    overflow-y: scroll;
+  }
+  .aboutMobile::-webkit-scrollbar{
+    display: none;
+  }
+  .profileWrap .profileFrame{
+    margin-bottom: 20px;
+  }
+  .page01 .profileWrap p h3 {
+    margin-bottom: 12px;
+  }
+  .tagCanvas{
+    width: 90%;
+    height: 150px;
+  }
+  .tag{
+    padding: 0 8px;
+    height: 34px;
+    font-size: 14px;
+  }
+  .tag.big{
+    font-size: 20px;
+  }
+  .page02{
+    margin-top: 20px;
+    position: relative;
+  }
+  .page02>div{
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto 1.5rem auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 4px solid var(--ivory);
+    outline: 4px solid var(--wood);
+    border-radius: 8px;
+    background-color: var(--wood);
+  }
+  .page02List{
+    margin-top: 10px;
+  }
+  /* 스킬 */
+  .mobileSkillsWrap{
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+    border: 4px solid var(--ivory);
+    outline: 4px solid var(--wood);
+    border-radius: 8px;
+    background-color: var(--wood);
+  }
+  .btnImg{
+    margin: 0 auto;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+  }
+  .btnImg .btnTitle{
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--primary-en);
+    font-size: 28px;
+    color: var(--dark-wood);
+  }
+  .mobileSkills{
+    padding: 20px 0;
+  }
+  .mobileSkill{
+    margin-bottom: 2rem;
+  }
+  .mobileSkill h3{
+    width: fit-content;
+    padding: .5rem 1rem;
+    background-color: var(--ivory);
+    font-size: 16px;
+    margin-bottom: 1rem;
+    clip-path: var(--clip-s);
+    box-shadow: var(--box-s);
+  }
+  .mobileSkill li{
+    font-size: 14px;
+    margin-left: 20px;
+    line-height: 1.5rem;
+    position: relative;
+  }
+  .mobileSkill li::before{
+    content: '';
+    width: 4px;
+    height: 4px;
+    top: 10px;
+    left: -10px;
+    transform: translateY(-50%);
+    background: url('/public/images/dot.svg');
+    position: absolute;
+  }
+
+
+  /* Portfolio */
+  .jouralLayout.portfolio{
+    padding: 10px 0;
+  }
+  .leftBoard{
+    width: 98%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .portfolioTitle{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    background-image: none;
+  }
+  .portfolioTitle .mobileButton{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .portfolioTitle h2{
+    font-size: 26px;
+    position: absolute;
+    line-height: normal;
+    text-wrap: nowrap;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .portfolioBtns button{
+    margin-right: 10px;
+  }
+  .portfolioBtns button{
+    height: 39px;
+    background: url('/public/images/buttons_mobile.png') no-repeat;
+    margin-right: 10px;
+    transition: .2s steps(3);
+  }
+  .portfolioBtns #all{
+    width: 51px;
+  }
+  .portfolioBtns #responsive{
+    width: 73px;
+    background-position: -51px 0;
+  }
+  .portfolioBtns #react{
+    width: 72px;
+    background-position: -124px 0;
+  }
+  .portfolioBtns button.on{
+    height: 35px;
+    background-image: url('/public/images/buttons_mobile_hover.png');
+  }
+  .projectThumbsWrap{
+    width: 99%;
+    padding: 0px 8px 8px 8px;
+    grid-gap: 10px;
+    height: calc(100% - 140px);
+  }
+  .projectThumb{
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+  }
+  .projectThumb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .rightBoard{
+    position: fixed;
+    width: 98%;
+    height: calc(100% - 140px);
+    left: 50%;
+    z-index: 100;
+    animation: MobileRightBoard 1s 1;
+    transition: transform .5s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  @keyframes MobileRightBoard {
+    0%{transform: translateX(200%);}
+    100%{transform: translateX(-50%);}
+  }
+  .rightBoard.hidden{
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  .rightBoard.visible{
+    transform: translateX(-50%);
+    opacity: 1;
+  }
+  .close-btn{
+    display: block;
+    position: absolute;
+    background: url('/public/images/close-btn.png');
+    background-size: cover;
+    width: 49px;
+    height: 54px;
+    top: 0px;
+    right: 5px;
+    z-index: 101;
+  }
+  .projectHeader{
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  .projectImage, .projectTitle{
+    flex: 1;
+  }
+  .projectImage{
+    padding: 10px;
+    height: 100px;
+  }
+  .projectTitle{
+    width: 100%;
+    text-align: center;
+  }
+  .projectTitle h4{
+    font-size: 16px;
+  }
+  .projectTitle h3{
+    font-size: 20px;
+  }
+  .projectTitle h3::after{
+    height: 6px;
+  }
+  .projectDetail{
+    height: calc(100% - 180px);
+  }
+  .projectDetail h4{
+    font-size: 16px;
+  }
+  .projectLink{
+    justify-content: space-between;
+    padding-right: 18px;
+    gap: 4px;
+  }
+  .projectLink button{
+    background: url('/public/images/button_mobile.png');
+    height: 48px;
+    background-size: cover;
+    transition: none;
+  }
+  .projectLink button:hover{
+    height: 48px;
+    margin-top: 0px;
+    background: url('/public/images/button_mobile.png');
+    background-size: cover;
+  }
+
+  /* contect */
+  .contectBoard.board{
+    width: 98%;
+    height: auto;
+  }
+  .contectWrap{
+    padding: 20px 0;
+  }
+  .contectTitle{
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .contectList p{
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .contectList p .bi{
+    font-size: 28px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .teemoFaceHeart, .teemoFaceSleep{
+    display: none;
+  }
+
+  /* 404 */
+  .notFound .board{
+    width: 98%;
+    height: auto;
+  }
+  .notFoundWrap{
+    padding: 50px 0;
+  }
+  .notFoundWrap h2{
+    text-align: center;
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .startTitle h1 img{
+    margin-top: 15%;
+    width: 60%;
+    object-fit: cover;
+  }
+  .jouralLayout.portfolio{
+    padding: 4px 0;
+  }
+  .projectThumbsWrap{
+    width: 99%;
+    padding: 0px 8px 8px 8px;
+    grid-gap: 10px;
+    height: calc(100% - 128px);
+  }
+  .rightBoard{
+    height: calc(100% - 128px);
+  }
+  .projectHeader{
+    margin-bottom: 8px;
+  }
+  .projectImage{
+    height: 80px;
+  }
+  .projectTitle h4{
+    margin-bottom: 6px;
+  }
+  .projectTitle h3{
+    font-size: 14px;
+  }
+  .projectDetail{
+    height: calc(100% - 140px);
+  }
+}

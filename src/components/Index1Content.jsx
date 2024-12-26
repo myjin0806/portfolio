@@ -7,7 +7,7 @@ const Index1Content = () => {
       const engine = Engine.create(),
         world = engine.world;
 
-      const containerElement = document.querySelector(".tag-canvas");
+      const containerElement = document.querySelector(".tagCanvas");
       if (!containerElement) return; // containerElement가 없으면 리턴
 
       const containerWidth = containerElement.clientWidth;
@@ -81,7 +81,7 @@ const Index1Content = () => {
       });
     }
 
-    const containerElement = document.querySelector(".tag-canvas");
+    const containerElement = document.querySelector(".tagCanvas");
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -107,14 +107,15 @@ const Index1Content = () => {
       {/* page 1 */}
       <div className='page01 page'>
         <div className="profileWrap">
-          <img src="images/profile.png" alt="" />
+          <img src="images/profile.png" alt="프로필 틀" className='profileFrame'/>
+          <img src="images/profile_pic.png" alt="프로필" className='profilePic'/>
           <p>
             <h3>안녕하세요!</h3>
             프론트엔드 개발자가 되고싶은 김해진입니다.<br />
             시간을 내어 제 포트폴리오를 봐주셔서<br />
             감사합니다.
           </p>
-          <div className='tag-canvas'>
+          <div className='tagCanvas'>
             <div className="tag big">#창의적</div>
             <div className="tag big">#감성적</div>
             <div className="tag big">#이해심많은</div>
@@ -137,8 +138,8 @@ const Index1Content = () => {
             <span className='btnTitle'>education</span>
           </div>
           <ul className='page02List'>
-            <li>ㅇㅇ</li>
-            <li>ㅇㅇ</li>
+            <li>2024.07 - 2025.01 그린컴퓨터학원<span>[스마트웹&콘텐츠개발] 프론트엔드 개발자(자바스크립트, 리엑트) 실무양성과정A</span></li>
+            <li>2017.03 - 2022.02 배재대학교 제약공학과<span>(졸업)</span></li>
           </ul>
         </div>
         <div>
@@ -147,8 +148,10 @@ const Index1Content = () => {
             <span className='btnTitle'>certificate</span>
           </div>
           <ul className='page02List'>
-            <li>ㅎㅇ</li>
-            <li>ㅎㅇ</li>
+            <li>
+              2021.08 - 2023.06 프롤로그
+              <span>홀서빙 및 주방보조</span>
+            </li>
           </ul>
         </div>
       </div>
