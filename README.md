@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# ✨포트폴리오
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 작업자 : 김해진
 
-## Available Scripts
+## 제작 기간
+>2024.12.05 - 2024.12.27
 
-In the project directory, you can run:
+## 💻배포 주소
+> [Portfolio](https://myjin0806.netlify.app/)
 
-### `npm start`
+## 📋깃허브 레포
+> [Github](https://github.com/myjin0806/portfolio.git/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✍링크
+> - [Figma](https://www.figma.com/design/xFgMiU6Q1n6UCu17Pq6tna/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4?node-id=0-1&t=X00ExdI4sJ0bqdFK-1)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ⭐️프로젝트 설명
+> 과학관의 시설은 잘 갖추어져 있지만, 웹사이트는 오래되어 현대적인 느낌이 부족했습니다. 또한 중요한 정보를 직관적으로 제공하지 못해, 이를 개선하기 위한 리뉴얼을 진행하게 되었습니다. 메인 컬러로는 과학관의 지적이고 미래지향적인 느낌을 살리는 남색과, 이와는 대비되지만 활기차고 친근한 주황색을 선택했습니다.<br><br>
+> 리뉴얼의 핵심은 사용자 편의성에 중점을 두었습니다. 정보를 효율적으로 배치하여 방문객들이 원하는 프로그램에 쉽게 접근하고, 최신 정보를 빠르게 확인할 수 있도록 하였습니다. 또한 다양한 연령층, 특히 가족 단위 방문객을 고려하여 직관적이고 친근한 인터페이스를 구현했습니다.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ⚙기술 및 도구
+> - 개발 환경 : <img src="https://img.shields.io/badge/windows10-0078D6?style=flat-square&logo=windows10&logoColor=white"/>
+> - 사용 프로그램 : <img src="https://img.shields.io/badge/Vs code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white"/> <img src="https://img.shields.io/badge/figma-F24E1E?style=flat-square&logo=figma&logoColor=white"/>
+> - 사용된 기술 : <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=Javascript&logoColor=white">
+          <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white">
+          <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white">
+    
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🖥페이지 구성
+| 섹션1 : MAIN                                                                                                      |
+| :---------------------------------------------------------------------------------------------------------------------- |
+| ![main](https://github.com/user-attachments/assets/446d9663-fd2f-4b4e-8ba2-f57553afeb6d) |
+>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| 섹션2 : ABOUT                                                                                                     |
+| :---------------------------------------------------------------------------------------------------------------------- |
+| ![about](https://github.com/user-attachments/assets/3ac3edd0-12b6-44f7-a14b-e3d92cd3071e) |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| 섹션3 : PROJECT                                                                                                     |
+| :---------------------------------------------------------------------------------------------------------------------- |
+|![project](https://github.com/user-attachments/assets/fea5f57c-2131-4a84-9adb-47fd9a18c213)|
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| 섹션3 : CONTECT                                                                                                     |
+| :---------------------------------------------------------------------------------------------------------------------- |
+| ![contect](https://github.com/user-attachments/assets/00817e6c-0280-48ab-88af-c75b2553fadc) |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
