@@ -20,6 +20,18 @@ const Home = () => {
   const [isMobile,setIsMobile ] = useState(window.innerWidth<=480);
 
   useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 480);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
     const timeout = setTimeout(() => {
       let text = textArr[textIdx];
       
