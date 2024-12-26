@@ -956,6 +956,10 @@ footer{
   font-size: 30px;
   line-height: 36px;
   margin-bottom: 15px;
+  transition: .2s steps(3);
+}
+.contectList p:hover{
+  color: var(--dark-wood);
 }
 .contectList p:first-child{
   cursor: pointer;
@@ -970,6 +974,7 @@ footer{
   font-size: 36px;
   margin-right: 40px;
 }
+
 .teemoFaceHeart, .teemoFaceSleep{
   width: 120px;
   height: 120px;
