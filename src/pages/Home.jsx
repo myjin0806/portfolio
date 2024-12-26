@@ -18,9 +18,6 @@ const Home = () => {
   const speed = 150;
   const [isFirstRender, setIsFirstRender] = useState(true);  // 처음 렌더링 구분
   const [isMobile,setIsMobile ] = useState(window.innerWidth<=480);
-  const handleResize = () => {
-    setIsMobile((window.innerWidth <= 768))
-  }
 
   useEffect(() => {
     const timeout = setTimeout(() => {
