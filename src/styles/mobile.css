@@ -162,6 +162,9 @@
   .page02List{
     margin-top: 10px;
   }
+  .page02List li span{
+    color: var(--ivory);
+  }
   /* 스킬 */
   .mobileSkillsWrap{
     width: 90%;
