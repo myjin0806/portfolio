@@ -267,6 +267,19 @@ header{
 .navLink.contect:hover img {
   content: url('/public/images/contect_hover.png');
 }
+.navLink.home.active img {
+  content: url('/public/images/home_hover.png');
+}
+.navLink.about.active img {
+  content: url('/public/images/about_hover.png');
+}
+.navLink.portfolio.active img {
+  content: url('/public/images/portfolio_hover.png');
+}
+.navLink.contect.active img {
+  content: url('/public/images/contect_hover.png');
+}
+
 .navLink:after{
   content: '';
   display: none;

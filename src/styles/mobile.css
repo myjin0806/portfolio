@@ -7,7 +7,7 @@
   }
   /* common */
   .content{
-    height: calc(100vh - 120px);
+    height: calc(100vh - 130px);
   }
   .board{
     padding: 48px;
@@ -29,7 +29,8 @@
   }
   /* Header */
   header{
-    height: 84px;
+    padding: 10px;
+    height: 90px;
   }
   .headerWrap{
     max-width: 100%;
@@ -53,7 +54,7 @@
   }
   .footerWrap{
     max-width: 100%;
-    line-height: 1.1rem;
+    line-height: 40px;
     flex-direction: column;
     justify-content: center;
   }
@@ -79,7 +80,7 @@
     width: 100%;
     height: fit-content;
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
   }
   .mobileTextBox img:nth-child(1){
     position: relative;

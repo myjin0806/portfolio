@@ -8,7 +8,7 @@
     "skill": ["HTML", "CSS", "REACT", "JAVASCRIPT"],
     "description": "개인 포트폴리오 웹사이트로, 나의 프로젝트와 기술 스택을 소개하는 플랫폼입니다. React를 활용해 동적인 사용자 경험을 제공하며, 애니메이션 효과와 모던한 디자인을 통해 시각적으로 매력적인 사이트를 완성했습니다. 이를 통해 나의 개발 역량과 디자인 감각을 효과적으로 전달할 수 있습니다.",
     "github": "https://github.com/myjin0806/portfolio.git",
-    "demo": "https://myjin0806.netlify.app/contect"
+    "demo": "https://myjin0806.netlify.app/"
   },
   {
     "type": "main",
