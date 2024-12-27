@@ -16,6 +16,7 @@
   /* 시작 */
   .startScreen{
     background-size: 200%;
+    overflow: hidden;
     background-position: bottom;
   }
   .startTitle h1 img{
