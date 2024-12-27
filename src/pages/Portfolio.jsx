@@ -57,7 +57,7 @@ const Portfolio = () => {
       <div className="leftBoard board">
         <div className="portfolioWrap">
           <div className="portfolioTitle">
-            <img src="images/button.png" alt="" className="mobileButton" />
+            <img src="images/button.png" alt="모바일 버튼" className="mobileButton" />
             <h2>my Portfolio</h2>
           </div>
           <div className="portfolioBtns">
