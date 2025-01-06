@@ -34,6 +34,17 @@
   },
   {
     "type": "sub",
+    "title": "PETSTORY 클론코딩",
+    "image": "sub15.png",
+    "class":["REACT", "RESPONSIVE"],
+    "during": "2024.12.12 - 2024.12.16",
+    "skill": ["HTML", "CSS", "REACT", "JAVASCRIPT"],
+    "description": "REACT로 제작한 PETSTORY클론코딩으로, 컴포넌트 기반 구조를 통해 재사용성을 높였습니다. 좋아요, 구매페이지기능이 구현되어있으며 최대한 사이트의 전체 페이지를 구현하는 것을 목표로 하였습니다. 이 프로젝트는 REACT의 개념을 이해하고 실습하는 데 중점을 두었습니다.",
+    "github": "https://github.com/myjin0806/test_blog.git",
+    "demo": "https://myjin006-clone-petstory.netlify.app/"
+  },
+  {
+    "type": "sub",
     "title": "블로그*기억창고",
     "image": "sub14.png",
     "class":["REACT"],

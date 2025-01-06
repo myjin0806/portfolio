@@ -7,7 +7,7 @@ const contect = () => {
         alert(`클립보드에 "${text}"를 복사했어요!`);
       })
       .catch((err) => {
-        alert("복사를 실패했어요 T^T: " + err);
+        alert("복사를 실패했어요 T^T" + err);
       });
   };
 
