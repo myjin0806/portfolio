@@ -19,7 +19,7 @@ const contect = () => {
             CONTECT
           </h2>
           <ul className='contectList'>
-            <p><i class="bi bi-github"></i><a href="https://github.com/myjin0806"  target="_blank" >git/ @myjin0806</a></p>
+            <p><i class="bi bi-github"></i><a href="https://github.com/myjin0806" target="_blank" rel="noreferrer noopener" >git/ @myjin0806</a></p>
             <p className='phone' onClick={()=>handleCopy("01024208247")}><i class="bi bi-telephone-plus-fill"></i>010-2420-8247</p>
             <p className='email' onClick={()=>handleCopy("myjin0806@naver.com")}><i class="bi bi-envelope-fill"></i>myjin0806@naver.com</p>
           </ul>
