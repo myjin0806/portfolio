@@ -26,6 +26,7 @@
 > [Github](https://github.com/myjin0806/portfolio.git/)
 
 ## ✍링크
+> - [Figjam](https://www.figma.com/board/hYsCpVsmhWTbozxnZ3L5OI/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4?node-id=0-1&t=ZwrD1JhphORB7hZP-1)
 > - [Figma](https://www.figma.com/design/xFgMiU6Q1n6UCu17Pq6tna/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4?node-id=0-1&t=X00ExdI4sJ0bqdFK-1)
 
 ## ⭐️프로젝트 설명
