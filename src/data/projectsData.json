@@ -4,7 +4,7 @@
     "title": "개인 포트폴리오",
     "image": "main03.png",
     "class": ["RESPONSIVE", "REACT"],
-    "during": "2024-11-04 - 2024-12-00",
+    "during": "2024-11-04 - 2024-12-26",
     "skill": ["HTML", "CSS", "REACT", "JAVASCRIPT"],
     "description": "개인 포트폴리오 웹사이트로, 나의 프로젝트와 기술 스택을 소개하는 플랫폼입니다. React를 활용해 동적인 사용자 경험을 제공하며, 애니메이션 효과와 모던한 디자인을 통해 시각적으로 매력적인 사이트를 완성했습니다. 이를 통해 나의 개발 역량과 디자인 감각을 효과적으로 전달할 수 있습니다.",
     "github": "https://github.com/myjin0806/portfolio.git",
@@ -31,6 +31,17 @@
     "description": "국립과천과학관 홈페이지의 리뉴얼 프로젝트로, 사용자 경험을 중시하여 웹사이트의 접근성과 반응성을 개선했습니다. 최신 HTML, CSS, JavaScript 기술을 활용하여 다양한 기기에서 최적화된 화면을 제공합니다. 특히, 직관적이고 현대적인 디자인을 채택하여 방문자가 빠르게 정보를 찾을 수 있도록 했습니다.",
     "github": "http://github.com/myjin0806/sciencecenter-renewal.git",
     "demo": "https://myjin0806.github.io/sciencecenter-renewal/"
+  },
+  {
+    "type": "sub",
+    "title": "BRAMS 클론코딩",
+    "image": "sub16.png",
+    "class":["REACT"],
+    "during": "2024.12.30 - 2024.01.10",
+    "skill": ["REACT", "JAVASCRIPT", "SCSS"],
+    "description": "REACT로 제작한 PETSTORY클론코딩으로, 컴포넌트 기반 구조를 통해 재사용성을 높였습니다. 좋아요, 구매페이지기능이 구현되어있으며 최대한 사이트의 전체 페이지를 구현하는 것을 목표로 하였습니다. 이 프로젝트는 REACT의 개념을 이해하고 실습하는 데 중점을 두었습니다.",
+    "github": "https://github.com/myjin0806/test_blog.git",
+    "demo": "https://myjin006-clone-petstory.netlify.app/"
   },
   {
     "type": "sub",
