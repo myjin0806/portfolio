@@ -680,23 +680,22 @@ footer{
 .portfolio{
   display: flex;
   height: fit-content;
-  justify-content: space-between;
+  justify-content: center;
 }
 .jouralLayout.portfolio{
   padding: 30px 0;
   height: 100%;
 }
 .leftBoard{
-  width: 820px;
+  width: 1100px;
   height: 100%;
   border: 1px solid black;
   animation: leftBoard 1s 1;
 }
 .rightBoard{
   width: 660px;
-  height: 100%;
   border: 1px solid black;
-  animation: rightBoard 1s 1;
+  animation: rightBoard .7s 1;
 }
 @keyframes leftBoard {
   0%{transform: translateX(-200%);}
@@ -710,6 +709,18 @@ footer{
   padding: 90px;
   border-image: url("/public/images/contect_border.png") 100/94px round;
   z-index: 10;
+}
+
+.modal-x-button {
+  position: absolute;
+  top: 20px;
+  right: 20px; 
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--dark-wood);
+  z-index: 1001;
 }
 
 .portfolioWrap, .projectWrap{
@@ -762,10 +773,11 @@ footer{
 .portfolioBtns button.on{
   height: 53px;
   background-image: url('/public/images/buttons_hover.png');
+  transform: translateY(5px);
 }
 .projectThumbsWrap{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   padding: 0 16px 16px 16px;
   width: 96%;
@@ -821,7 +833,33 @@ footer{
   height: 100%;
   clip-path: var(--clip-l);
 }
-.rightBoard .projectWrap{
+/* 모달 - 오른쪽 보드였던 것.. */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0; 
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none; 
+}
+.modal-overlay.visible {
+  opacity: 1;
+  pointer-events: auto; 
+}
+.modal-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.projectWrap{
+  width: 480px;
+  height: 580px;
   padding: 0 9px;
   position: relative;
 }
@@ -841,6 +879,7 @@ footer{
   height: 140px;
   background-color: var(--dark-wood);
   clip-path: var(--clip-l);
+  margin-right: 20px;
 }
 .projectImage img{
   width: 100%;
@@ -849,7 +888,7 @@ footer{
   clip-path: var(--clip-l);
 }
 .projectTitle{
-  width: 210px;
+  min-width: 210px;
   height: 100%;
   display: flex;
   justify-content: center;
