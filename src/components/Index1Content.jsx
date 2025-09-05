@@ -138,7 +138,8 @@ const Index1Content = () => {
             <span className='btnTitle'>education</span>
           </div>
           <ul className='page02List'>
-            <li>2024.07 - 2025.01 그린컴퓨터학원<span>[스마트웹&콘텐츠개발] 프론트엔드 개발자(자바스크립트, 리엑트) 실무양성과정A</span></li>
+            <li>2025.07 - 2025.09 그린컴퓨터학원<span>AWS 클라우드네이티브 PWA위치기반 실무프로젝트 CICD(Nest, React, Typescript)</span></li>
+            <li>2024.07 - 2025.01 그린컴퓨터학원<span>[스마트웹&콘텐츠개발] 프론트엔드 개발자(자바스크립트, 리엑트) 실무양성과정 A</span></li>
             <li>2017.03 - 2022.02 배재대학교 제약공학과<span>(졸업)</span></li>
           </ul>
         </div>

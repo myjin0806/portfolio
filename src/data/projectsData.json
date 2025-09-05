@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "type": "main",
     "title": "개인 포트폴리오",
     "image": "main03.png",
@@ -11,6 +12,7 @@
     "demo": "https://myjin0806.netlify.app/"
   },
   {
+    "id": 2,
     "type": "main",
     "title": "서울어린이대공원 리뉴얼",
     "image": "main02.png",
@@ -22,6 +24,7 @@
     "demo": "https://myjin0806.github.io/seoulchildrensgrandpark_Portfolio/"
   },
   {
+    "id": 3,
     "type": "main",
     "title": "국립과천과학관 리뉴얼",
     "image": "main01.png",
@@ -33,6 +36,31 @@
     "demo": "https://myjin0806.github.io/sciencecenter-renewal/"
   },
     {
+  "id": 22,
+  "type": "sub",
+  "title": "Weathergram",
+  "image": "sub19.png",
+  "class": ["REACT"],
+  "during": "2025-08-06 - 2025-09-07",
+  "skill": ["REACT","CSS","TypeScript"],
+  "description": "Weathergram은 날씨 기반 SNS 커뮤니티 애플리케이션입니다. 기존의 날씨 어플과 커뮤니티를 접목시켜 날씨에 맞는 순간을 기록하고 다른 사람과 소통할 수 있는 소셜 플랫폼을 구축하였습니다.",
+  "github": "",
+  "demo": ""
+  },
+    {
+  "id": 21,
+  "type": "sub",
+  "title": "Blisse",
+  "image": "sub18.png",
+  "class": ["REACT"],
+  "during": "2025-04-21 - 2025-05-02",
+  "skill": ["REACT","CSS"],
+  "description": "Blisse는 메이크업·뷰티 제품을 소개하고 판매하는 웹 애플리케이션입니다. 추천 상품, MD 픽 아이템, 리뷰 등을 통해 쇼핑의 즐거움을 극대화하고, 반응형 디자인과 편리한 검색·필터링 기능으로 어디서나 쉽게 원하는 제품을 찾아볼 수 있습니다. 또한 룩북과 공지사항, 마이페이지 기능으로 맞춤형 뷰티 경험을 제공합니다.",
+  "github": "https://github.com/myjin0806/Blisse.git",
+  "demo": "https://myjin0806-blisse.netlify.app/"
+  },
+    {
+  "id": 4,
   "type": "sub",
   "title": "Movie Box",
   "image": "sub17.png",
@@ -44,6 +72,7 @@
   "demo": "https://myjin0806-movie-box.netlify.app/"
   },
   {
+    "id": 5,
     "type": "sub",
     "title": "BRAMS 클론코딩",
     "image": "sub16.png",
@@ -55,6 +84,7 @@
     "demo": "https://myjin0806-clone-brams.netlify.app/"
   },
   {
+    "id": 6,
     "type": "sub",
     "title": "PETSTORY 클론코딩",
     "image": "sub15.png",
@@ -66,6 +96,7 @@
     "demo": "https://myjin0806-clone-petstory.netlify.app/"
   },
   {
+    "id": 7,
     "type": "sub",
     "title": "블로그*기억창고",
     "image": "sub14.png",
@@ -77,6 +108,7 @@
     "demo": "https://myjin0806-blog-test.netlify.app/"
   },
   {
+    "id": 8,
     "type": "sub",
     "title": "Todo List",
     "image": "sub13.png",
@@ -88,6 +120,7 @@
     "demo": "https://myjin0806-todolist.netlify.app/"
   },
   {
+    "id": 9,
     "type": "sub",
     "title": "class 101 클론코딩",
     "image": "sub12.png",
@@ -99,6 +132,7 @@
     "demo": "https://myjin0806.github.io/clone_class101/"
   },
   {
+    "id": 10,
     "type": "sub",
     "title": "이벤트 등록이 가능한 달력",
     "image": "sub11.png",
@@ -109,6 +143,7 @@
     "demo": "https://myjin0806.github.io/events_calendar/"
   },
   {
+    "id": 11,
     "type": "sub",
     "title": "Mordern Shopping Mall",
     "image": "sub10.png",
@@ -119,6 +154,7 @@
     "demo": "https://myjin0806.github.io/mordern_shopping_mall/"
   },
   {
+    "id": 12,
     "type": "sub",
     "title": "오늘의 날짜 맞추기 게임",
     "image": "sub09.png",
@@ -129,6 +165,7 @@
     "demo": "https://myjin0806.github.io/todays-date/"
   },
   {
+    "id": 13,
     "type": "sub",
     "title": "JAVASCRIPT 달력",
     "image": "sub08.png",
@@ -139,6 +176,7 @@
     "demo": "https://myjin0806.github.io/test_calendar/"
   },
   {
+    "id": 14,
     "type": "sub",
     "title": "날씨를 알려줘요!",
     "image": "sub07.png",
@@ -149,6 +187,7 @@
     "demo": "https://myjin0806.github.io/show_weather/"
   },
   {
+    "id": 15,
     "type": "sub",
     "title": "에이전시 페이지",
     "image": "sub06.png",
@@ -159,6 +198,7 @@
     "demo": "https://myjin0806.github.io/test_agency/"
   },
   {
+    "id": 16,
     "type": "sub",
     "title": "Homecheck 클론코딩",
     "image": "sub05.png",
@@ -170,6 +210,7 @@
     "demo": "https://myjin0806.github.io/clone_homecheck/"
   },
   {
+    "id": 17,
     "type": "sub",
     "title": "Netflix 클론코딩",
     "image": "sub04.png",
@@ -181,6 +222,7 @@
     "demo": "https://myjin0806.github.io/clone_netflix/"
   },
   {
+    "id": 18,
     "type": "sub",
     "title": "Custom CheckBox",
     "image": "sub03.png",
@@ -191,6 +233,7 @@
     "demo": "https://myjin0806.github.io/custom_checkbox/"
   },
   {
+    "id": 19,
     "type": "sub",
     "title": "Mammamia 클론코딩",
     "image": "sub02.png",
@@ -202,6 +245,7 @@
     "demo": "https://myjin0806.github.io/clone_mammamia/"
   },
   {
+    "id": 20,
     "type": "sub",
     "title": "Google Chrome 클론코딩",
     "image": "sub01.png",
