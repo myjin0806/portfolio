@@ -2,13 +2,13 @@ import React, { useState, useEffect , useMemo } from 'react';
 
 const Home = () => {
   const textArr = useMemo(() => [
-    "안녕!",
-    "만나서 반가워!",
+    "안녕, 만나서 반가워!",
     "오른쪽의 아이콘을 클릭해봐!",
+    "어서 와! 기다리고 있었어!",
     "좋은 하루 보내!",
     "멋진 시간이 될 거야!",
     "방문해줘서 고마워!",
-    "어서 와! 기다리고 있었어!"
+
   ], []); // 빈 배열을 의존성 배열로 넣어 한 번만 계산되게 함
 
   const [displayText, setDisplayText] = useState(""); 
