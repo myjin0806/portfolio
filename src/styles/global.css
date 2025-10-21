@@ -535,9 +535,6 @@ footer{
 }
 
 /* page02 */
-.page02>div{
-  height: 50%;
-}
 .btnImg{
   width: fit-content;
   height: fit-content;
