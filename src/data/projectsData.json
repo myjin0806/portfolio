@@ -44,7 +44,7 @@
   "during": "2025-08-06 - 2025-09-07",
   "skill": ["REACT","CSS","TypeScript"],
   "description": "Weathergram은 날씨 기반 SNS 커뮤니티 애플리케이션입니다. 기존의 날씨 어플과 커뮤니티를 접목시켜 날씨에 맞는 순간을 기록하고 다른 사람과 소통할 수 있는 소셜 플랫폼을 구축하였습니다.",
-  "github": "",
+  "github": "https://github.com/KDT-PWA-Class-Two-Group/weathergram.git",
   "demo": ""
   },
     {
